@@ -1,0 +1,83 @@
+h1, h2{
+  font-family: "fino", serif;
+font-weight: 400;
+font-style: normal;
+text-align: center;
+}
+
+h1{
+  font-size: 100px;
+}
+
+.picturemap { 
+    width: 100vw; 
+  }
+
+h2{
+  margin-top: 50px;
+}
+
+.description{
+  margin-bottom: 100px;
+  margin-left:50px;
+  margin-right:50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:14pt;
+}
+  
+.continents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.continent {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 165px;
+}
+.continent img {
+    width: 300px;
+    height: 180px;
+    display: block;
+}
+
+#continentpic {
+  height: 200px;
+}
+
+.continent {
+  position: relative;
+  overflow: hidden;
+}
+
+.continent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s; 
+}
+
+.continent .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  transition: opacity 0.3s; 
+  opacity: 0; 
+}
+
+.continent:hover img {
+  transform: scale(1.1); 
+}
+
+.continent:hover .caption {
+  opacity: 1; 
+}
